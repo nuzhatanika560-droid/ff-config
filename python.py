@@ -20,13 +20,25 @@ WORKING_RESPONSE = {
 
 @app.route('/ver.php', methods=['GET', 'POST'])
 def ver():
-    print("PATH:", request.full_path)
+    print("VER PATH:", request.full_path)
     return jsonify(WORKING_RESPONSE)
+
+@app.route('/MajorLogin', methods=['GET', 'POST'])
+def major_login():
+    print("MAJORLOGIN BODY:", request.get_data(as_text=True))
+    print("MAJORLOGIN HEADERS:", dict(request.headers))
+    return jsonify(WORKING_RESPONSE)
+
+@app.route('/Ping', methods=['GET', 'POST'])
+def ping():
+    print("PING BODY:", request.get_data(as_text=True))
+    return jsonify({"status": 0, "message": "ok"})
 
 @app.route('/', defaults={'path': ''}, methods=['GET', 'POST'])
 @app.route('/<path:path>', methods=['GET', 'POST'])
 def catch_all(path):
-    print("PATH:", request.full_path)
+    print("CATCH PATH:", request.full_path)
+    print("CATCH BODY:", request.get_data(as_text=True))
     return jsonify(WORKING_RESPONSE)
 
 if __name__ == '__main__':
