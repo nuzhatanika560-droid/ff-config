@@ -1,7 +1,8 @@
 {
   "status": 0,
-  "message": "ok",
+  "message": "ANNIE_CONFIG_ACTIVE",
   "login": "ok",
+  "server_note": "MRDEEKAY_OWN_SERVER",
   "config": {
     "aim_assist": 100,
     "aim_assist_range": 999,
