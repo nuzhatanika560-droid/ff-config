@@ -1,0 +1,19 @@
+{
+  "status": 0,
+  "message": "ANNIE_CONFIG_ACTIVE",
+  "login": "ok",
+  "config": {
+    "aim_assist": 100,
+    "aim_assist_range": 999,
+    "aim_assist_angle": 180,
+    "headshot_rate": 100,
+    "aim_target": "head",
+    "no_recoil": 1,
+    "no_spread": 1,
+    "auto_fire": 1,
+    "anti_ban": 1,
+    "check_version": 0,
+    "check_resource": 0,
+    "check_hacker": 0
+  }
+}
